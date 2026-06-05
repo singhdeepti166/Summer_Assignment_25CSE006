@@ -1,0 +1,30 @@
+//QUESTION NO 5
+#include<stdio.h>
+int main(){
+    int n,sum;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    
+    for(sum=0;n>0;n/=10){
+        sum=sum+(n%10);
+    }
+    printf("sum=%d",sum);
+    return 0;
+    
+}
+
+
+//QUESTION NO 6
+#include<stdio.h>
+int main(){
+    int n,rev;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    
+    for(rev=0;n>0;n/=10){
+        rev=rev*10+(n%10);
+    }
+    printf("Reverse=%d",rev);
+    return 0;
+    
+}
