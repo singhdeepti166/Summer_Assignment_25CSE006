@@ -1,0 +1,84 @@
+//QUESTION NO 13
+#include<stdio.h>
+int main(){
+    int n,i,a=0,b=1,c;
+    printf("Enter the number of term:");
+    scanf("%d",&n);
+    printf("Fibonaaci series");
+    
+    for(i=1;i<=n;i++){
+        printf("%d",a);
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    return 0;
+}
+
+
+
+//QUESTION NO 14
+#include <stdio.h>
+int main() {
+    int n, a = 0, b = 1, c, i;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for(i = 1; i < n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    printf("Nth Fibonacci number = %d", a);
+    return 0;
+}
+
+
+
+//QUESTION NO 15
+#include<stdio.h>
+int main(){
+    int n,temp,rem,sum=0;
+    printf("Enter number:");
+    scanf("%d",&n);
+    
+    temp=n;
+    while(temp!=0){
+        rem=temp%10;
+        sum=sum+rem*rem*rem;
+        temp=temp/10;
+    }
+    if(sum==n)
+    printf("Armstrong number");
+    else
+    printf("Not Armstrong number");
+    return 0;
+}
+
+
+
+//QUESTION NO 16
+#include<stdio.h>
+int main(){
+    int start,end,n,temp,rem,sum;
+    printf("enter start and end:");
+    scanf("%d%d",&start,&end);
+    
+    for(n=start;n<=end;n++){
+        temp=n;
+        sum=0;
+        while(temp!=0){
+            rem=temp%10;
+            sum=sum+rem*rem*rem;
+            temp=temp/10;
+        }
+        if(sum==n);
+        printf("%d\n",n);
+    }
+   return 0;
+}
+
+
+
+
